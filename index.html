@@ -3,24 +3,193 @@
 <head>
     <title>Easybank</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="easybank-landing-page-master/images/logo.svg" alt="" class="logo">
-        </div>
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-            <a href="#">Careers</a>
-        </div>
-        <div class="request_invite1">
-            <a href="#" class="request_invite1_a">Request Invite</a>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="logo_a">
+                        <img src="easybank-landing-page-master/images/logo.svg" class="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul class="menuul">
+                        <li class="menuli"><a href="#">Home</a></li>
+                        <li class="menuli"><a href="#">About</a></li>
+                        <li class="menuli"><a href="#">Contact</a></li>
+                        <li class="menuli"><a href="#">Blog</a></li>
+                        <li class="menuli"><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="request_invite1">
+                    <a href="#" class="request_invite1_a">Request Invite</a>
+                </div>
+                <div class="hamburger" onclick="openMenu()">
+                    <a href="#" class="hambtn">
+                        <img src="easybank-landing-page-master/images/icon-hamburger.svg" alt="">
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
+    <main>
+        <div class="back">
+            <div class="container">
+                <div class="advs">
+                    <div class="advs-text">
+                        <h1 class="advs-h1">Why choose Easybank?</h1>
+                        <h4 class="advs-h4">We leverage Open Banking to turn your bank account into your financial
+                            hub.<br>
+                            Control your finances like never before.</h4>
+                    </div>
+                    <div class="advs-icons">
+                        <div class="advs-icon">
+                            <img src="easybank-landing-page-master/images/icon-online.svg" class="advs-img">
+                            <h3 class="advs-h3">Online Banking</h3>
+                            <p class="advs-p">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                                Quibusdam<br>
+                                nemo nostrum
+                                itaque.Doloribus ipsum<br> dolore, earum rem vel repudiandae voluptatem.</p>
+                        </div>
+                        <div class="advs-icon">
+                            <img src="easybank-landing-page-master/images/icon-budgeting.svg" class="advs-img">
+                            <h3 class="advs-h3">Simple Budgeting</h3>
+                            <p class="advs-p">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                                Quibusdam<br>
+                                nemo nostrum
+                                itaque. Doloribus ipsum<br> dolore, earum rem vel repudiandae voluptatem.</p>
+                        </div>
+                        <div class="advs-icon">
+                            <img src="easybank-landing-page-master/images/icon-onboarding.svg" class="advs-img">
+                            <h3 class="advs-h3">Fast Onboarding</h3>
+                            <p class="advs-p">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                                Quibusdam<br>
+                                nemo nostrum
+                                itaque. Doloribus ipsum<br> dolore, earum rem vel repudiandae voluptatem.</p>
+                        </div>
+                        <div class="advs-icon">
+                            <img src="easybank-landing-page-master/images/icon-api.svg" class="advs-img">
+                            <h3 class="advs-h3">Open API</h3>
+                            <p class="advs-p">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit.
+                                Quibusdam<br>
+                                nemo nostrum
+                                itaque. Doloribus ipsum<br> dolore, earum rem vel repudiandae voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="container">
+                <h1 class="news-h1">Latest Articles</h1><br><br>
+                <div class="articles">
+                    <div class="article-card">
+                        <div class="card-wrapper">
+                            <img src="easybank-landing-page-master/images/image-currency.jpg" class="art-img">
+                            <div class="art_text">
+                                <p class="autor">By Claire Robinson</p>
+                                <a href="" class="art_a">
+                                    <h3>Receive money in any<br> currency with no fees</h3>
+                                </a>
+                                <p class="desc">The world is getting smaller and<br> we're becoming more mobile.
+                                    So<br>
+                                    why should you be forced to only<br> receive money in a single...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <div class="card-wrapper">
+                            <img src="easybank-landing-page-master/images/image-currency.jpg" class="art-img">
+                            <div class="art_text">
+                                <p class="autor">By Claire Robinson</p>
+                                <a href="" class="art_a">
+                                    <h3>Receive money in any<br> currency with no fees</h3>
+                                </a>
+                                <p class="desc">The world is getting smaller and<br> we're becoming more mobile.
+                                    So<br>
+                                    why should you be forced to only<br> receive money in a single...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <div class="card-wrapper">
+                            <img src="easybank-landing-page-master/images/image-currency.jpg" class="art-img">
+                            <div class="art_text">
+                                <p class="autor">By Claire Robinson</p>
+                                <a href="" class="art_a">
+                                    <h3>Receive money in any<br> currency with no fees</h3>
+                                </a>
+                                <p class="desc">The world is getting smaller and<br> we're becoming more mobile.
+                                    So<br>
+                                    why should you be forced to only<br> receive money in a single...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-card">
+                        <div class="card-wrapper">
+                            <img src="easybank-landing-page-master/images/image-currency.jpg" class="art-img">
+                            <div class="art_text">
+                                <p class="autor">By Claire Robinson</p>
+                                <a href="" class="art_a">
+                                    <h3>Receive money in any<br> currency with no fees</h3>
+                                </a>
+                                <p class="desc">The world is getting smaller and<br> we're becoming more mobile.
+                                    So<br>
+                                    why should you be forced to only<br> receive money in a single...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-div">
+                    <div class="part1">
+                        <div class="social">
+                            <div class="footer-logo">
+                                <a href="logo_a">
+                                    <img src="easybank-landing-page-master/images/logo.svg" class="logo">
+                                </a>
+                            </div>
+                            <div class="socs">
+                                <img src="easybank-landing-page-master/images/icon-facebook.svg" class="socs-img">
+                                <img src="easybank-landing-page-master/images/icon-youtube.svg" class="socs-img">
+                                <img src="easybank-landing-page-master/images/icon-twitter.svg" class="socs-img">
+                                <img src="easybank-landing-page-master/images/icon-pinterest.svg" class="socs-img">
+                                <img src="easybank-landing-page-master/images/icon-instagram.svg" class="socs-img">
+                            </div>
+                        </div>
+                        <div class="footer-menu">
+                            <div class="col">
+                                <a href="">About us</a>
+                                <a href="">Contact</a>
+                                <a href="">Blog</a>
+                            </div>
+                            <div class="col">
+                                <a href="">Careers</a>
+                                <a href="">Support</a>
+                                <a href="">Privacy policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <div class="request_invite2">
+                            <a href="#" class="request_invite1_a">Request Invite</a>
+                        </div>
+                        <p class="footer-p">(c) Easybank. All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="javascript/main.js"></script>
 </body>
 
 </html>
